@@ -13,81 +13,97 @@
         <title>Consulta de usuarios</title>
         <style>
             body {
-                font-family: Arial, sans-serif;
-                margin: 0 auto;                
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0 auto;
                 padding: 20px;
                 line-height: 1.6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgba(219, 246, 255, 1);
             }
             h1, h2 {
                 color: #333;
-            }     
-            .contenedor { 
-                max-width: 800px; 
-                margin: 0 auto; 
             }
-            .form_g { 
-                margin-bottom: 15px; 
+            .contenedor {
+                width: 800px;
+                margin: 20px auto;
+                padding: 15px;
+                border-radius: 16px;
+                transition: .4s ease-in-out;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+                background-color: white;
             }
-            .form_g label { 
-                display: block; 
-                margin-bottom: 5px; 
-                font-weight: bold; 
+            .form_g {
+                margin-bottom: 15px;
             }
-            .form_g input { 
-                width: 70%; 
-                padding: 8px; 
-                box-sizing: border-box; 
-                border: 1px solid #ddd; 
-                border-radius: 4px; 
+            .form_g label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
             }
-            .btn { 
-                padding: 8px 15px; 
-                background-color: #4CAF50; 
-                color: white; 
-                border: none; 
-                border-radius: 4px; 
-                cursor: pointer; 
+            .form_g input {
+                width: 70%;
+                padding: 8px;
+                box-sizing: border-box;
+                border: 1px solid #ddd;
+                border-radius: 4px;
             }
-            .btn:hover { 
-                background-color: #45a049; 
+            .btn {
+                padding: 8px 15px;
+                background-color: rgba(158, 228, 255, 0.8);
+                color: black;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
             }
-            .menu { 
-                margin: 20px 0; 
+            .btn:hover {
+                background-color: rgba(155, 197, 214, 1);
             }
-            .menu a { 
-                color: #4CAF50; 
-                text-decoration: none; 
+            .menu {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                margin: 20px 0;
             }
-            .menu a:hover { 
-                text-decoration: underline; 
+            .menu a {
+                padding: 7px 8px;
+                background-color: rgba(158, 228, 255, 0.8);
+                color: black;
+                text-decoration: none;
+                border-radius: 4px;
             }
-            table { 
-                width: 100%; 
-                border-collapse: collapse; 
-                margin: 20px 0; 
+            .menu a:hover {
+                background-color: rgba(155, 197, 214, 1);
             }
-            table, th, td { 
-                border: 1px solid #ddd; 
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
             }
-            th, td { 
-                padding: 8px; 
-                text-align: left; 
+            table, th, td {
+                border: 1px solid #ddd;
             }
-            th { 
-                background-color: #f2f2f2; 
+            th, td {
+                padding: 8px;
+                text-align: left;
             }
-            .resultados { 
-                margin: 20px 0; 
-                padding: 15px; 
-                border: 1px solid #ddd; 
-                border-radius: 4px; 
+            th {
+                background-color: #f2f2f2;
             }
-            .no_funciono { 
-                color: #721c24; 
-                background-color: #f8d7da; 
-                padding: 10px; 
-                border-radius: 4px; 
-            }            
+            .resultados {
+                margin: 20px 0;
+                padding: 15px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+            .no_funciono {
+                color: #721c24;
+                background-color: #f8d7da;
+                padding: 10px;
+                border-radius: 4px;
+            }        
         </style>
     </head>
     <body>
