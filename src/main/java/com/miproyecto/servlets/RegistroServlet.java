@@ -5,7 +5,6 @@
 package com.miproyecto.servlets;
 
 import com.miproyecto.modelo.Usuario;
-import jakarta.mail.search.SearchException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

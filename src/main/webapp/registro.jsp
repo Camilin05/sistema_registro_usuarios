@@ -26,7 +26,7 @@
                 </div>
                 <div class="form_g"> 
                     <label for="apellido"> Apellido: </label>
-                    <input type="text" id="apellido" name="apellidos" required>
+                    <input type="text" id="apellido" name="apellido" required>
                 </div>
                 <div class="form_g"> 
                     <label for="email"> Email: </label>

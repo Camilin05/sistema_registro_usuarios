@@ -94,7 +94,7 @@
             <div class="contenedor">
         <h1>Consulta de Usuarios</h1>
         
-        <%-- Formulario de búsqueda que usa método GET --%>
+       
         <form action="consulta" method="GET">
             <div class="form_g">
                 <label for="email">Buscar usuario por email:</label>
@@ -103,7 +103,7 @@
             </div>
         </form>
         
-        <%-- Resultados de la búsqueda --%>
+       
         <% if (request.getAttribute("busquedaRealizada") != null) { %>
             <div class="resultados">
                 <h2> Resultado de la búsqueda </h2>
@@ -131,7 +131,7 @@
             <% } %>
             <h2> Lista de usuarios registrados </h2>
             <%
-            List<Usuario> listaUsuarios = (List<Usuario>)session.getAttribute("listadoUsuarios");
+            List<Usuario> listaUsuarios = (List<Usuario>)session.getAttribute("listaUsuarios");
             if (listaUsuarios != null && !listaUsuarios.isEmpty()) {
             %>
             <table> 
