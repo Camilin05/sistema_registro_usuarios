@@ -8,10 +8,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <meta charset="UTF-8">
+        <title>Registro de usuario</title>
+        
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div class="contenedor">
+            <% if (request.getAttribute("mensaje") != null) { %>
+            <div class="mensaje"> 
+                <%= request.Attribute("mensaje") %>
+            </div>
+            <% } %>
+            <form action="registro" method="POST">
+                <div class="form_g"> 
+                    <label for="nombre"> Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form_g"> 
+                    <label for="apellido"> Apellido: </label>
+                    <input type="text" id="apellido" name="apellidos" required>
+                </div>
+                <div class="form_g"> 
+                    <label for="email"> Email: </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form_g"> 
+                    <label for="password"> Contraseña: </label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form_g">                     
+                    <button type="submit" class="btn">Registrar</button>
+                </div>
+            </form>
+            <div class="menu">
+            <a href="index.jsp">Volver a Inicio</a>  
+            <a href="consulta">Consultar Usuarios</a>
+        </div>
+        </div>
     </body>
 </html>
