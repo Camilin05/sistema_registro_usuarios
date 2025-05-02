@@ -12,31 +12,42 @@
         <title>Sistema de registro de Usuarios</title>
         <style>                        
             body {
-                font-family: Arial, sans-serif;
-                margin: 0 auto;                
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0 auto;
                 padding: 20px;
                 line-height: 1.6;
-            }
+                display: flex; 
+                align-items: column; 
+                align-items: center;
+                background-color: rgba(219, 246, 255, 1);
+}
             h1 {
                 color: #333;
             }            
             .contenedor {
                 max-width: 800px;
-                margin: 0 auto;                
-            }
+                margin: 20px auto;
+                padding: 15px;
+                border-radius: 16px;
+                transition: .4s ease-in-out;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+                background-color: white;
+}
             .menu {
                 display: flex;
                 gap: 20px;
+                justify-content: center;
                 margin: 20px 0;
+                
             }
             .menu a { 
-                padding: 10px 15px; 
-                background-color: #4CAF50; 
-                color: white; 
+                padding: 7px 8px; 
+                background-color: rgba(158, 228, 255, 0.8);
+                color: black; 
                 text-decoration: none; 
                 border-radius: 4px; }
             .menu a:hover { 
-               background-color: #45a049; 
+               background-color: rgba(155, 197, 214, 1);
             }
         </style>
     </head>
