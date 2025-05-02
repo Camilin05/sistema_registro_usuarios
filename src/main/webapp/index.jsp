@@ -17,7 +17,7 @@
                 padding: 20px;
                 line-height: 1.6;
                 display: flex; 
-                align-items: column; 
+                flex-direction: column; 
                 align-items: center;
                 background-color: rgba(219, 246, 255, 1);
 }
@@ -25,7 +25,7 @@
                 color: #333;
             }            
             .contenedor {
-                max-width: 800px;
+                width: 800px;
                 margin: 20px auto;
                 padding: 15px;
                 border-radius: 16px;
