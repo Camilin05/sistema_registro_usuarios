@@ -16,7 +16,7 @@
         <div class="contenedor">
             <% if (request.getAttribute("mensaje") != null) { %>
             <div class="mensaje"> 
-                <%= request.Attribute("mensaje") %>
+                <%= request.getAttribute("mensaje") %>
             </div>
             <% } %>
             <form action="registro" method="POST">
